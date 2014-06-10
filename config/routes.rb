@@ -1,4 +1,5 @@
 NewGesteam::Application.routes.draw do
+  get "sessions/new"
   get "welcome/index"
 
   resources :admins
