@@ -1,1 +1,12 @@
-<p>vista</p>
+<p>vista team index</p>
+<br>
+<br>
+<div style="text-aligh:center" >
+	<%=button_to 'Create Team', new_team_path, :method => :get %>
+</div>
+<br>
+<br>
+<% @teams.each do |team|%>
+	<%= team.name%>
+	<%= team.description%>
+<%end%>
