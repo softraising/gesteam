@@ -7,7 +7,7 @@ class AdminsController < ApplicationController
 	def create
 	  @admin = Admin.new(admin_params)
 	  if @admin.save
-	    redirect_to teams_path, :notice => "Signed up!"
+	    redirect_to sessions_new_path, :notice => "Signed up!"
 	  else
 	    render "new"
 	  end
