@@ -1,3 +1,43 @@
 // Place all the styles related to the teams controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.team_table{
+	background-color: black;
+	/*border-collapse: collapse;*/
+	border-spacing: 1px;
+}
+
+.team_table tr th{
+	background-color: #6E6E6E;
+	padding: 5px;
+	margin: 1px;
+}
+
+/*.team_table tr td{
+	background-color: ;
+	padding: 2px;
+}*/
+
+.list_line_even {
+	 background: #D8D8D8;
+}
+
+.list_line_odd {
+ 	background: #A4A4A4;
+}
+
+/* .team_table tr {
+  display: block;
+  border: 1px solid #000;
+}
+
+.team_table td{
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;		
+}
+
+.team_table th{
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;		
+} */

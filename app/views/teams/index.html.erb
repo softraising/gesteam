@@ -6,7 +6,18 @@
 </div>
 <br>
 <br>
-<% @teams.each do |team|%>
-	<%= team.name%>
-	<%= team.description%>
-<%end%>
+<table class="team_table">
+	<tr>
+		<th> Name </th>
+		<th> Description </th>
+		<th> Members </th>	
+	</tr>
+	<% @teams.each do |team|%>
+		
+		<tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+			<td><%= team.name%></td>
+			<td><%= team.description%></td>
+			<td>To do Members</td>
+		</tr>
+	<%end%>
+</table>
