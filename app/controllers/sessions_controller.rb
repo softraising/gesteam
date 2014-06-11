@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
 	def create
 	  admin = Admin.authenticate(params[:email], params[:password])
 	  if admin
-	    session[:user_id] = admin.id
+	    session[:admin_id] = admin.id
 	    redirect_to teams_path, :notice => "Logged in!"
 	  else
 	    flash.now.alert = "Invalid email or password"
