@@ -16,4 +16,39 @@
 
  /*= require foundation */
 
+ .app_header{
+ 	background-color: #BECED1;
+ 	width: 100%;
+ 	
+ }
 
+ .cl:after{
+ 	content: "";
+ 	clear: both;
+ 	display: block;
+ }
+
+.fotoPortada {
+ 	width: 100%;
+ 	height: 60%;
+ }
+
+.hdr-inner {
+	background-color: white;
+	max-width: 1000px;
+	margin: 0 auto;
+
+}
+
+.hdr-right{
+	float: right;
+	width: 15%;
+	margin-top: 1%;
+}
+
+.hdr-brand{
+	display: inline-block;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	float:left;
+}

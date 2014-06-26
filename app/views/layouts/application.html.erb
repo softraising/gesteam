@@ -9,19 +9,28 @@
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
+
+
   </head>
 
   <body>
-
-    <div id="admin_nav">
-      <% if current_admin %>
-        Logged in as <%= current_admin.email %>.
-        <%= link_to "Log out", log_out_path %>
-      <% else %>
-        <%= link_to "Sign up", sign_up_path %> or
-        <%= link_to "log in", log_in_path %>
-      <% end %>
-    </div>
+    <header class = "app_header">
+      <div class = "hdr-inner cl">
+        <div class = "hdr-left">
+          <span class = "hdr-brand"> <%= image_tag "gt.jpg" %></span>
+          
+        </div>
+        <div class = "hdr-right">
+          <% if current_admin %>
+            Logged in as <%= current_admin.email %>.
+            <%= link_to "Log out", log_out_path %>
+          <% else %>
+            <%= button_to "Sign up", sign_up_path, :method => :get, :class => "button [tiny small large]" %>
+            <%= button_to "Log in", log_in_path, :method => :get, :class => "button [tiny small large]" %>
+          <% end %>
+        </div>
+      </div>
+    </header>
 
     <% flash.each do |name, msg| %>
       <%= content_tag :div, msg, :id => "flash_#{name}" %>
