@@ -17,12 +17,12 @@
     <header class = "app_header">
       <div class = "hdr-inner cl">
         <div class = "hdr-left">
-          <span class = "hdr-brand"> <%= image_tag "gt.jpg" %></span>
+          <span class = "hdr-brand"> <%= image_tag "gt6.png" %></span>
           
         </div>
         <div class = "hdr-right">
           <% if current_admin %>
-            Logged in as <%= current_admin.email %>.
+            <p class = "logIn-as">Logged in as</p> <strong><%= current_admin.email %></strong>
             <%= link_to "Log out", log_out_path %>
           <% else %>
             <%= button_to "Sign up", sign_up_path, :method => :get, :class => "button [tiny small large]" %>

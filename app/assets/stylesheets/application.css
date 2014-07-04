@@ -17,9 +17,15 @@
  /*= require foundation */
 
  .app_header{
- 	background-color: #BECED1;
+ 	background-color: #2E2EFE;
  	width: 100%;
  	
+ }
+
+ .logIn-as{
+ 	font-family: cursive;
+ 	color: #2E2EFE;
+ 	margin-bottom: 0;
  }
 
  .cl:after{
