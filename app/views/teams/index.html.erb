@@ -12,12 +12,14 @@
 		<th> Name </th>
 		<th> Description </th>
 		<th> Members </th>	
+		<th> Company </th>
 	</tr>
 	<% @teams.each do |team|%>		
 		<tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
-			<td><%= team.name%></td>
-			<td><%= team.description%></td>
+			<td><%= team.name %></td>
+			<td><%= team.description %></td>
 			<td>To do Members</td>
+			<td><%= team.company %></td>
 		</tr>
 	<% end %>
 </table>
