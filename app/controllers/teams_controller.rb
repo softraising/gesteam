@@ -15,6 +15,6 @@ class TeamsController < ApplicationController
 	private
 
 	def entry_params
-		params.require(:team).permit(:name, :description)
+		params.require(:team).permit(:name, :description, :company)
 	end
 end
