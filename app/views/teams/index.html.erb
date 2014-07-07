@@ -20,6 +20,7 @@
 			<td><%= team.description %></td>
 			<td>To do Members</td>
 			<td><%= team.company %></td>
+			<%= link_to "edit", edit_team_path(team) %>
 		</tr>
 	<% end %>
 </table>

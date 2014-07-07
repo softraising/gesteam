@@ -1,5 +1,40 @@
-       Prefix Verb URI Pattern              Controller#Action
-welcome_index GET /welcome/index(.:format) welcome#index
-       Prefix Verb URI Pattern              Controller#Action
-welcome_index GET /welcome/index(.:format) welcome#index
-         root GET /                        welcome#index
+          Prefix Verb   URI Pattern                                Controller#Action
+    sessions_new GET    /sessions/new(.:format)                    sessions#new
+   welcome_index GET    /welcome/index(.:format)                   welcome#index
+            root GET    /                                          welcome#index
+         log_out GET    /log_out(.:format)                         sessions#destroy
+          log_in GET    /log_in(.:format)                          sessions#new
+         sign_up GET    /sign_up(.:format)                         admins#new
+       new_admin GET    /                                          admins#new
+          admins GET    /admins(.:format)                          admins#index
+                 POST   /admins(.:format)                          admins#create
+                 GET    /admins/new(.:format)                      admins#new
+      edit_admin GET    /admins/:id/edit(.:format)                 admins#edit
+           admin GET    /admins/:id(.:format)                      admins#show
+                 PATCH  /admins/:id(.:format)                      admins#update
+                 PUT    /admins/:id(.:format)                      admins#update
+                 DELETE /admins/:id(.:format)                      admins#destroy
+        sessions GET    /sessions(.:format)                        sessions#index
+                 POST   /sessions(.:format)                        sessions#create
+     new_session GET    /sessions/new(.:format)                    sessions#new
+    edit_session GET    /sessions/:id/edit(.:format)               sessions#edit
+         session GET    /sessions/:id(.:format)                    sessions#show
+                 PATCH  /sessions/:id(.:format)                    sessions#update
+                 PUT    /sessions/:id(.:format)                    sessions#update
+                 DELETE /sessions/:id(.:format)                    sessions#destroy
+    team_members GET    /teams/:team_id/members(.:format)          members#index
+                 POST   /teams/:team_id/members(.:format)          members#create
+ new_team_member GET    /teams/:team_id/members/new(.:format)      members#new
+edit_team_member GET    /teams/:team_id/members/:id/edit(.:format) members#edit
+     team_member GET    /teams/:team_id/members/:id(.:format)      members#show
+                 PATCH  /teams/:team_id/members/:id(.:format)      members#update
+                 PUT    /teams/:team_id/members/:id(.:format)      members#update
+                 DELETE /teams/:team_id/members/:id(.:format)      members#destroy
+           teams GET    /teams(.:format)                           teams#index
+                 POST   /teams(.:format)                           teams#create
+        new_team GET    /teams/new(.:format)                       teams#new
+       edit_team GET    /teams/:id/edit(.:format)                  teams#edit
+            team GET    /teams/:id(.:format)                       teams#show
+                 PATCH  /teams/:id(.:format)                       teams#update
+                 PUT    /teams/:id(.:format)                       teams#update
+                 DELETE /teams/:id(.:format)                       teams#destroy

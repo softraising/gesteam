@@ -1,0 +1,25 @@
+<h1 class="center">Editing Team</h1>
+
+<br>
+
+<div class="sidedar large-4 columns left">&nbsp;</div>
+
+<div class="large-4 columns">
+
+	<%= form_for @team do |f|%>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+		<br>
+		<%= f.label :description %>
+		<%= f.text_field :description %>
+		<br>
+		<%= f.label :company %>
+		<%= f.text_field :company %>
+		<br>
+
+
+		<%= f.submit 'Save' %>
+		<%= link_to 'Cancel', teams_path %>
+	<% end %>
+
+</div>
