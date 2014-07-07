@@ -1,43 +1,46 @@
 // Place all the styles related to the teams controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.teams {
+	.team_table{
+		background-color: black;
+		/*border-collapse: collapse;*/
+		border-spacing: 1px;
+	}
 
-.team_table{
-	background-color: black;
-	/*border-collapse: collapse;*/
-	border-spacing: 1px;
+	.team_table tr th{
+		background-color: #5858FA;
+		padding: 5px;
+		margin: 1px;
+	}
+
+	/*.team_table tr td{
+		background-color: yellow;
+		padding: 2px;
+	}*/
+
+
+	.list_line_even {
+		 background: #A9D0F5;
+	}
+
+	.list_line_odd {
+	 	 background: #CEECF5;
+	}
+
+
+	/* .team_table tr {
+	  display: block;
+	  border: 1px solid #000;
+	}
+
+	.team_table td{
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;		
+	}
+
+	.team_table th{
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;		
+	} */
 }
-
-.team_table tr th{
-	background-color: #5858FA;
-	padding: 5px;
-	margin: 1px;
-}
-
-/*.team_table tr td{
-	background-color: ;
-	padding: 2px;
-}*/
-
-.list_line_even {
-	 background: #CEECF5;
-}
-
-.list_line_odd {
- 	 background: #E0F2F7;
-}
-
-/* .team_table tr {
-  display: block;
-  border: 1px solid #000;
-}
-
-.team_table td{
-	border-left: 1px solid #000;
-	border-right: 1px solid #000;		
-}
-
-.team_table th{
-	border-left: 1px solid #000;
-	border-right: 1px solid #000;		
-} */
