@@ -31,6 +31,14 @@ class TeamsController < ApplicationController
 		end
 	end
 
+	def destroy
+		@team.destroy
+		respond_to do |format|
+     	  format.html { redirect_to teams_url }
+      	  format.json { head :no_content }
+    	end
+	end
+
 	private
 
 	def entry_params
