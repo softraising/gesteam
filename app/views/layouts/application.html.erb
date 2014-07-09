@@ -22,7 +22,7 @@
         </div>
         <div class = "hdr-right">
           <% if current_admin %>
-            <p class = "logIn-as">Logged in as</p> <strong><%= current_admin.email %></strong>
+            <p class = "logIn-as">Logged in as</p> <%= link_to current_admin.email, teams_path %>
             <%= link_to "Log out", log_out_path %>
           <% else %>
             <%= button_to "Sign up", sign_up_path, :method => :get, :class => "button [tiny small large]" %>

@@ -1,0 +1,13 @@
+<h3>members#index</h3>
+
+<!--<% if @members == nil || @members == "" %>
+<p>no hay members</p>
+<% else %><% end %>-->
+<h4>Miembros del Team: </h4>
+	<%= @team.name %>                    <!-- SIN TERMINAR, MIRAR PORQUE NO SALE ESTO -->
+	<br>
+	<br>
+
+	<% @members.each do |m|%>		
+			<p><%= m.name %></p>
+	<% end %>

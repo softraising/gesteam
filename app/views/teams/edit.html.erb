@@ -22,4 +22,5 @@
 		<%= link_to 'Cancel', teams_path %>
 	<% end %>
 
+	<%= link_to "Add Member", new_team_member_path(:team_id => @team.id) %>
 </div>

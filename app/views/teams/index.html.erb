@@ -1,9 +1,7 @@
 <p>vista team#index</p>
 <br>
 <br>
-<div style="text-aligh:center" >
-	<%=button_to 'Create Team', new_team_path, :method => :get %>
-</div>
+
 <br>
 <br>
 	
@@ -24,8 +22,13 @@
 			<td>				
 				<%= link_to "show", team_path(team) %><br/>
 				<%= link_to "edit", edit_team_path(team) %><br/>
-				<%= link_to "destroy", team, confirm: 'Are you sure?', method: :delete %>
+				<%= link_to "destroy", team, confirm: 'Are you sure?', method: :delete %><br/>
+				<%= link_to "view members", team_members_path(:team_id => team.id) %>
 			</td>
 		</tr>
 	<% end %>
 </table>
+<br>
+<div style="text-aligh:center", class="center" >
+	<%=button_to 'Create Team', new_team_path, :method => :get %>
+</div>
