@@ -4,6 +4,11 @@ class MembersController < ApplicationController
 		@team = Team.find(params[:team_id])
 		@members = @team.members
 	end
+
+	def show
+		
+	end
+	
 	def new
 		team = Team.find(params[:team_id])
 		@member = team.members.new

@@ -2,12 +2,33 @@
 
 <!--<% if @members == nil || @members == "" %>
 <p>no hay members</p>
-<% else %><% end %>-->
+<% else %><% end %>
 <h4>Miembros del Team: </h4>
-	<%= @team.name %>                    <!-- SIN TERMINAR, MIRAR PORQUE NO SALE ESTO -->
+	<%= @team.name %>
 	<br>
 	<br>
 
 	<% @members.each do |m|%>		
 			<p><%= m.name %></p>
 	<% end %>
+-->
+<table class="member_table center">
+	<tr>
+		<th> Name </th>
+		<th> Email </th>
+		<th> Incidences </th>	
+		<th></th>
+	</tr>
+	<% @members.each do |member|%>		
+		<tr class="<%= cycle("list_line_odd", "list_line_even") %>">
+			<td><%= member.name %></td>
+			<td><%= member.email %></td>
+			<td><%= member.incidences %></td>
+			<td>				
+				<%#= link_to "show", team_path(member) %><br/>
+				<%#= link_to "edit", edit_team_path(member) %><br/>
+				<%#= link_to "destroy", team_member_path(:team_id => member.team_id, :member_id => member.id), confirm: 'Are you sure?', method: :delete %><br/>
+			</td>
+		</tr>
+	<% end %>
+</table>
