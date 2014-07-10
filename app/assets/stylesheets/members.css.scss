@@ -1,23 +1,26 @@
 // Place all the styles related to the members controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.member {
-	.member_table {
-		background-color: black;
-		border-spacing: 1px;
-	}
 
-	.member_table tr th{
-		background-color: orange;
-		padding: 5px;
-		margin: 1px;
-	}
+.member_table {
+	background-color: black;
+	border-spacing: 1px;
+}
 
-	.list_line_even {
-		 background: blue;
-	}
+.member_table tr th{
+	background-color: orange;
+	padding: 5px;
+	margin: 1px;
+}
 
-	.list_line_odd {
-	 	 background: red;
-	}
+.list_line_even {
+	 background: blue;
+}
+
+.list_line_odd {
+ 	 background: red;
+}
+
+.center {
+	margin: 0 auto;
 }

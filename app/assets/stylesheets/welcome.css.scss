@@ -1,3 +1,46 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container1 {
+	width: 100%;
+	margin-top: 14%;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-bottom: thick dotted #2E2EFE;
+}
+
+.container2 {
+	width: 55%;
+	display: inline-block;
+}
+
+.container2 p {
+	color: #2E2EFE;
+}
+.container3 {
+	width: 35%;
+	display: inline-block;
+	margin-top: -18%;
+	margin-right: -6%;
+}
+
+.p_home {
+	text-decoration: underline;
+	font-size: 24pt;
+	
+}
+
+.text_home {
+	font-size: x-large;
+	display: inline-block;
+}
+
+.up{
+	margin-top: -19%;
+}
+
+.image_media {
+	margin-left: 15%;
+	display: inline-block;
+}
