@@ -25,8 +25,14 @@
             <p class = "logIn-as">Logged in as</p> <%= link_to current_admin.email, teams_path %>
             <%= link_to "Log out", log_out_path %>
           <% else %>
-            <%= button_to "Sign up", sign_up_path, :method => :get, :class => "button [tiny small large]" %>
-            <%= button_to "Log in", log_in_path, :method => :get, :class => "button [tiny small large]" %>
+          <div class="button-bar">
+            <ul class="button-group">
+              <li><a href="sign_up_path" class="small button">SignUp</a></li>
+              <li><a href="log_in_path" class="small button">LogIn</a></li>
+            </ul>
+          </div>
+            <%#= button_to "Sign up", sign_up_path, :method => :get, :class => "button [tiny small large]" %>
+            <%#= button_to "Log in", log_in_path, :method => :get, :class => "button [tiny small large]" %>
           <% end %>
         </div>
       </div>

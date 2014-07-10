@@ -3,11 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .container1 {
-	width: 100%;
+	width: 90%;
 	margin-top: 14%;
 	margin-left: 5%;
 	margin-right: 5%;
-	border-bottom: thick dotted #2E2EFE;
+	border-bottom: 1px solid #dbdbdb;
+
 }
 
 .container2 {
@@ -15,8 +16,8 @@
 	display: inline-block;
 }
 
-.container2 p {
-	color: #2E2EFE;
+.container2:first-child {
+	color: #333;
 }
 .container3 {
 	width: 35%;
@@ -26,14 +27,16 @@
 }
 
 .p_home {
-	text-decoration: underline;
-	font-size: 24pt;
 	
+	font-size: 24pt;
+	font-family: freight-sans-pro;
+	border-bottom: 1px solid #dbdbdb;
 }
 
 .text_home {
 	font-size: x-large;
 	display: inline-block;
+	color: #787878;
 }
 
 .up{
@@ -43,4 +46,28 @@
 .image_media {
 	margin-left: 15%;
 	display: inline-block;
+}
+
+.footer {
+	max-width: 100%;
+	background-color: #787878;
+}
+	
+.textfoot {
+	display: block;
+	text-align: center;
+}
+.middle {
+	display: inline-block;
+	margin-left: 30%;
+}
+.abc {
+	display: inline-block;
+}
+.center {
+	text-align: center;
+	
+}
+.colorg {
+	color: #787878;
 }

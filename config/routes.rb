@@ -1,6 +1,7 @@
 NewGesteam::Application.routes.draw do
   get "sessions/new"
   get "welcome/index"
+  get "contact" => "welcome#contact", :as => "contact"
 
   root 'welcome#index'
 
