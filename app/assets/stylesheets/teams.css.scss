@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .teams {
+	.app_header{
+	 	background-color: #787878;
+	 	width: 100%;
+	 	z-index: 1;
+	 	position: fixed;
+	 	margin-top: -8%;
+ 	}
 	.team_table{
 		background-color: black;
 		/*border-collapse: collapse;*/
@@ -14,12 +21,6 @@
 		margin: 1px;
 	}
 
-	/*.team_table tr td{
-		background-color: yellow;
-		padding: 2px;
-	}*/
-
-
 	.list_line_even {
 		 background: #A9D0F5;
 	}
@@ -28,7 +29,19 @@
 	 	 background: #CEECF5;
 	}
 
+	.center{
+		margin: 0 auto;
+		margin-top: 8%;
+	}
 
+	.center2 {
+		margin: 0 auto;
+		margin-left: 47%;
+	}
+	.bajo-hdr {
+		margin-left: 2%;
+		position: fixed;
+	}
 	/* .team_table tr {
 	  display: block;
 	  border: 1px solid #000;
@@ -43,8 +56,9 @@
 		border-left: 1px solid #000;
 		border-right: 1px solid #000;		
 	} */
+	/*.team_table tr td{
+			background-color: yellow;
+			padding: 2px;
+		}*/
 
-	.center{
-		margin: 0 auto;
-	}
 }

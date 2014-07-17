@@ -1,10 +1,6 @@
-<p>vista team#index</p>
-<br>
-<br>
-<br>
-<br>
-<br>
-	
+<h3 class="bajo-hdr">Your <br><strong>Teams</strong></h3>
+
+
 <table class="team_table center">
 	<tr>
 		<th> Name </th>
@@ -29,6 +25,11 @@
 	<% end %>
 </table>
 <br>
-<div style="text-aligh:center", class="center" >
+<div style="text-aligh:center", class="center2" >
 	<%=button_to 'Create Team', new_team_path, :method => :get %>
 </div>
+
+<%= @series %>
+<%= @json %>
+<%= @js %>
+<%= @html %>

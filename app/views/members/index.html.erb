@@ -1,17 +1,5 @@
-<h3>members#index</h3>
+<h3 class="down-hdr">Your <br><strong>Members </strong>by: <br><strong><%= @team.name %></strong></h3>
 
-<!--<% if @members == nil || @members == "" %>
-<p>no hay members</p>
-<% else %><% end %>
-<h4>Miembros del Team: </h4>
-	<%= @team.name %>
-	<br>
-	<br>
-
-	<% @members.each do |m|%>		
-			<p><%= m.name %></p>
-	<% end %>
--->
 <table class="member_table centerm">
 	<tr>
 		<th> Name </th>
@@ -32,3 +20,17 @@
 		</tr>
 	<% end %>
 </table>
+
+
+<!--<% if @members == nil || @members == "" %>
+<p>no hay members</p>
+<% else %><% end %>
+<h4>Miembros del Team: </h4>
+	<%= @team.name %>
+	<br>
+	<br>
+
+	<% @members.each do |m|%>		
+			<p><%= m.name %></p>
+	<% end %>
+-->
