@@ -18,7 +18,7 @@
 			<td>				
 				<%= link_to "show", team_path(team) %><br/>
 				<%= link_to "edit", edit_team_path(team) %><br/>
-				<%= link_to "destroy", team, confirm: 'Are you sure?', method: :delete %><br/>
+				<%= link_to "destroy", team, method: :delete %><br/>
 				<%= link_to "view members", team_members_path(:team_id => team.id) %>
 			</td>
 		</tr>
