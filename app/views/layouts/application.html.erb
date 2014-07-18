@@ -38,10 +38,10 @@
       </div>
     </header>
 
-    <% flash.each do |name, msg| %>
-      <%= content_tag :div, msg, :id => "flash_#{name}", :class => "bajo-hdr" %>
+<!--    <% flash.each do |name, msg| %>
+      <%#= content_tag :div, msg, :id => "flash_#{name}", :class => "bajo-hdr" %>
     <% end %>
-
+-->
 
     <%= yield %>
     <%= javascript_include_tag "application" %>

@@ -1,5 +1,7 @@
-<h3 class="bajo-hdr">Your <br><strong>Teams</strong></h3>
-
+<h3 class="bajo-hdr">Your <br><strong>Teams</strong>
+<div>
+	<%=button_to 'Create Team', new_team_path, :method => :get %>
+</div></h3>
 
 <table class="team_table center">
 	<tr>
@@ -18,18 +20,15 @@
 			<td>				
 				<%= link_to "show", team_path(team) %><br/>
 				<%= link_to "edit", edit_team_path(team) %><br/>
-				<%= link_to "destroy", team, method: :delete %><br/>
+				<%= link_to "destroy", team, confirm: 'Are you sure?', method: :delete %><br/>
 				<%= link_to "view members", team_members_path(:team_id => team.id) %>
 			</td>
 		</tr>
 	<% end %>
 </table>
 <br>
-<div style="text-aligh:center", class="center2" >
-	<%=button_to 'Create Team', new_team_path, :method => :get %>
-</div>
-
-<%= @series %>
-<%= @json %>
-<%= @js %>
-<%= @html %>
+<br>
+<br>
+<!--<div style="text-aligh:center", class="center2" >
+	<%#=button_to 'Create Team', new_team_path, :method => :get %>
+</div>-->
