@@ -1,7 +1,6 @@
 // Place all the styles related to the members controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 .members {
 	.app_header{
 	 	background-color: #787878;
@@ -32,10 +31,15 @@
 	.centerm {
 		margin: 0 auto;
 		margin-top: 8%;
+		text-align: center;
 	}
 
 	.down-hdr {
 		margin-left: 2%;
 		position: fixed;
+	}
+
+	.thing {
+		width: 15%;
 	}
 }
