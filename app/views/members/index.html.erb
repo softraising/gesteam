@@ -1,4 +1,5 @@
-<div class="down-hdr thing"><h4>Your <br>Members by: <br><strong><%= @team.name %></strong></h4></div>
+<div class="down-hdr thing"><h4>Your <br>Members by: <br><strong><%= @team.name %></strong></h4><br>
+	<%= link_to "go my teams", teams_path %></div>
 
 <table class="member_table centerm">
 	<tr>
@@ -13,9 +14,10 @@
 			<td><%= member.email %></td>
 			<td><%= member.incidences %></td>
 			<td>				
-				<%#= link_to "show", team_path(member) %><br/>
+				<%= link_to "show", team_member_path(@team, member) %><br/>
 				<%= link_to "edit", edit_team_member_path(@team, member) %><br/>
-				<%#= link_to "destroy", team_member_path(:team_id => member.team_id, :member_id => member.id), confirm: 'Are you sure?', method: :delete %><br/>
+				<%#= link_to "destroy", team_member_path(:team_id => member.team_id, :member_id => member.id), confirm: 'Are you sure?', method: :delete %>
+				<%= link_to "destroy", team_member_path(member.team_id, member), confirm: 'Are you sure?', method: :delete %><br/>
 			</td>
 		</tr>
 	<% end %>

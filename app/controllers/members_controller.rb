@@ -34,6 +34,15 @@ class MembersController < ApplicationController
 		end
 	end
 
+	def destroy
+		@member = Member.find(params[:id])
+		@member.destroy
+		respond_to do |format|
+			format.html { redirect_to team_members_path }
+			format.json { head :no_content }
+		end
+	end
+
 	def entry_params
 		params.require(:member).permit(:name, :email, :incidences, :team_id)
 	end
