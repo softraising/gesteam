@@ -1,11 +1,10 @@
-<!-- form (edit & new) -->
 <div class="sidedar large-4 columns left">&nbsp;</div>
 
 <div class="large-4 columns">
 
 	<%= form_for @team do |f|%>
 		<%= f.label :name %>
-		<%= f.text_field :name %>
+		<%= f.text_field :name, :autofocus => true %>
 		<br>
 		<%= f.label :description %>
 		<%= f.text_field :description %>

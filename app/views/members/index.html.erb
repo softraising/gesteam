@@ -1,5 +1,5 @@
 <div class="down-hdr thing"><h4>Your <br>Members by: <br><strong><%= @team.name %></strong></h4><br>
-	<%= link_to "go my teams", teams_path %></div>
+	<%= link_to "go my teams", teams_path %><br><br><%= link_to "Add Member", new_team_member_path(:team_id => @team.id) %></div>
 
 <table class="member_table centerm">
 	<tr>
@@ -14,25 +14,12 @@
 			<td><%= member.email %></td>
 			<td><%= member.incidences %></td>
 			<td>				
-				<%= link_to "show", team_member_path(@team, member) %><br/>
-				<%= link_to "edit", edit_team_member_path(@team, member) %><br/>
-				<%#= link_to "destroy", team_member_path(:team_id => member.team_id, :member_id => member.id), confirm: 'Are you sure?', method: :delete %>
+				<%= link_to "show", team_member_path(member.team_id, member) %><br/>
+				<%= link_to "edit", edit_team_member_path(member.team_id, member) %><br/>
 				<%= link_to "destroy", team_member_path(member.team_id, member), confirm: 'Are you sure?', method: :delete %><br/>
 			</td>
+
 		</tr>
 	<% end %>
+
 </table>
-
-
-<!--<% if @members == nil || @members == "" %>
-<p>no hay members</p>
-<% else %><% end %>
-<h4>Miembros del Team: </h4>
-	<%= @team.name %>
-	<br>
-	<br>
-
-	<% @members.each do |m|%>		
-			<p><%= m.name %></p>
-	<% end %>
--->

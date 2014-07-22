@@ -10,7 +10,6 @@ class TeamsController < ApplicationController
 	end
 
 	def show
-		# @team = Team.find(params[:id])
 	end
 
 	def create
@@ -19,12 +18,9 @@ class TeamsController < ApplicationController
 	end
 
 	def edit
-		# @team = Team.find(params[:id])
 	end
 
 	def update
-		# @team = Team.find(params[:id])
-
 		if @team.update(entry_params)
 			redirect_to @team
 		else
@@ -33,7 +29,6 @@ class TeamsController < ApplicationController
 	end
 
 	def destroy
-		# @team = Team.find(params[:id])
 		@team.destroy
 		respond_to do |format|
       		format.html { redirect_to teams_path }
