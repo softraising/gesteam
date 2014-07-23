@@ -15,7 +15,11 @@
 		<tr class="<%= cycle("list_line_odd", "list_line_even") %>">
 			<td><%= team.name %></td>
 			<td><%= team.description %></td>
-			<td>To do Members</td>
+			<td>
+				<% team.members.each do |m|%>
+					<%= m.name + ", " %>
+				<% end %>
+			</td>
 			<td><%= team.company %></td>
 			<td>				
 				<%= link_to "show", team_path(team) %><br/>
