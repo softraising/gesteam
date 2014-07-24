@@ -41,6 +41,14 @@
 		margin-left: 2%;
 		position: fixed;
 	}
+	.limitLength {
+		word-wrap: break-word;
+		max-width: 200px;
+	}
+	.limitLength2 {
+		word-wrap: break-word;
+		max-width: 600px;
+	}
 	/* .team_table tr {
 	  display: block;
 	  border: 1px solid #000;

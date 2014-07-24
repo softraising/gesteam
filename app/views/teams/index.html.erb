@@ -6,16 +6,16 @@
 <table class="team_table center">
 	<tr>
 		<th> Name </th>
-		<th> Description </th>
-		<th> Members </th>	
+		<th class="limitLength2"> Description </th>
+		<th class="limitLength"> Members </th>	
 		<th> Company </th>
 		<th></th>
 	</tr>
 	<% @teams.each do |team|%>		
 		<tr class="<%= cycle("list_line_odd", "list_line_even") %>">
 			<td><%= team.name %></td>
-			<td><%= team.description %></td>
-			<td>
+			<td class="limitLength2"><%= truncate(team.description, length: 280) %></td>
+			<td class="limitLength">
 				<% team.members.each do |m|%>  
 					<%= link_to m.name + ",", team_member_path(team, m) %><%= " " %>
 				<% end %>
