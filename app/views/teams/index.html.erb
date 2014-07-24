@@ -16,8 +16,8 @@
 			<td><%= team.name %></td>
 			<td><%= team.description %></td>
 			<td>
-				<% team.members.each do |m|%>
-					<%= m.name + ", " %>
+				<% team.members.each do |m|%>  
+					<%= link_to m.name + ",", team_member_path(team, m) %><%= " " %>
 				<% end %>
 			</td>
 			<td><%= team.company %></td>
