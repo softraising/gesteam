@@ -17,7 +17,7 @@ describe Admin do
 
 	it 'does not allow duplicate emails' do
 		#admin = FactoryGirl.create(:admin)
-		FactoryGirl.build(:admin, email: "johndoe@example.com")
+		FactoryGirl.create(:admin, email: "johndoe@example.com")
 		FactoryGirl.build(:admin, email: "johndoe@example.com").should_not be_valid
 	end
 end
