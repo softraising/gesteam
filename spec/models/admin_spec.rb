@@ -14,4 +14,10 @@ describe Admin do
 	it 'is invalid without a password' do
 		FactoryGirl.build(:admin, password: nil).should_not be_valid
 	end
+
+	it 'does not allow duplicate emails' do
+		#admin = FactoryGirl.create(:admin)
+		FactoryGirl.build(:admin, email: "johndoe@example.com")
+		FactoryGirl.build(:admin, email: "johndoe@example.com").should_not be_valid
+	end
 end
