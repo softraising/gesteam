@@ -8,6 +8,6 @@ describe Admin do
 	end
 
 	it 'is invalid without an email account' do
-		FactoryGirl.build(:admin, email: nil).should be_valid
+		FactoryGirl.build(:admin, email: nil).should_not be_valid
 	end
 end
