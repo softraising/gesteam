@@ -11,7 +11,7 @@ describe WelcomeController do
 
   	it "gets a HTTP status response 200" do
   		get :index
-  		expect(response.status). to eq(300)
+  		expect(response.status). to eq(200)
   		expect(response). to be_success
     end
   end
