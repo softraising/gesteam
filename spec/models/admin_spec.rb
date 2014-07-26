@@ -12,6 +12,6 @@ describe Admin do
 	end
 
 	it 'is invalid without a password' do
-		FactoryGirl.build(:admin, password: nil).should be_valid
+		FactoryGirl.build(:admin, password: nil).should_not be_valid
 	end
 end
