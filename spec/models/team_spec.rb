@@ -8,6 +8,6 @@ describe Team do
 	end
 
 	it 'is invalid without a name' do
-		FactoryGirl.build(:team, name: nil).should be_valid
+		FactoryGirl.build(:team, name: nil).should_not be_valid
 	end
 end
