@@ -12,7 +12,7 @@ describe Team do
 	end
 
 	it 'does not allow duplicate team names' do 
-		FactoryGirl.create(:name, name: 'Death Star' )
-		FactoryGirl.build(:name, name: 'Death Star').should be_valid
+		FactoryGirl.create(:team, name: 'Death Star' )
+		FactoryGirl.build(:team, name: 'Death Star').should_not be_valid
 	end
 end
