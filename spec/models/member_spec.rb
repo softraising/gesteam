@@ -8,6 +8,6 @@ describe Member do
 	end
 
 	it 'is invalid without a name' do
-		FactoryGirl.build(:member, name: nil).should be_valid
+		FactoryGirl.build(:member, name: nil).should_not be_valid
 	end
 end
