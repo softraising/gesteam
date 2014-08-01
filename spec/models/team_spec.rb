@@ -10,4 +10,9 @@ describe Team do
 	it 'is invalid without a name' do
 		FactoryGirl.build(:team, name: nil).should_not be_valid
 	end
+
+	it 'does not allow duplicate team names' do 
+		FactoryGirl.create(:name, name: 'Death Star' )
+		FactoryGirl.build(:name, name: 'Death Star').should be_valid
+	end
 end
