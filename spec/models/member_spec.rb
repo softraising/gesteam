@@ -12,6 +12,7 @@ describe Member do
 	end
 
 	it 'is invalid without an email' do
-		FactoryGirl.build(:member, email: nil).should be_valid
+		FactoryGirl.build(:member, email: nil).should_not be_valid
 	end
+
 end
