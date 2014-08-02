@@ -18,7 +18,7 @@ describe Member do
 	it 'does not allow duplicate emails' do
 
 		FactoryGirl.create(:member, email: "johndoe@example.com")
-		FactoryGirl.build(:member, email: "johndoe@example.com").should be_valid
+		FactoryGirl.build(:member, email: "johndoe@example.com").should_not be_valid
 	end
 
 end
