@@ -15,4 +15,10 @@ describe Member do
 		FactoryGirl.build(:member, email: nil).should_not be_valid
 	end
 
+	it 'does not allow duplicate emails' do
+
+		FactoryGirl.create(:member, email: "johndoe@example.com")
+		FactoryGirl.build(:member, email: "johndoe@example.com").should be_valid
+	end
+
 end
