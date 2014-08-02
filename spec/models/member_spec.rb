@@ -10,4 +10,8 @@ describe Member do
 	it 'is invalid without a name' do
 		FactoryGirl.build(:member, name: nil).should_not be_valid
 	end
+
+	it 'is invalid without an email' do
+		FactoryGirl.build(:member, email: nil).should be_valid
+	end
 end
