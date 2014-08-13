@@ -17,7 +17,7 @@
  /*= require foundation */
 
  .app_header{
- 	background-color: #787878;
+ 	background-color: #CEECF5;
  	width: 100%;
  	z-index: 1;
  	position: fixed;
@@ -66,5 +66,9 @@
 	text-align: right;
 }
 
+.tables {
+	background-color: white;
+	border-spacing: 2px;
+}
 
 
