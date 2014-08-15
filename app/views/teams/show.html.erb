@@ -17,8 +17,13 @@
 
 <p>
 	<strong>Members: </strong>
-	TO DO
+		<%@team.members.each do |m|%>
+			<%=link_to m.name + ",", team_member_path(@team, m) %>
+		<%end%>
+	
 </p>
 <br>
 <br>
-<%= link_to "all teams", teams_path %>
+<%= button_to "Add New Member", new_team_member_path(:team_id => @team.id), :method => :get %> <br>
+<%= button_to "Back To Teams", teams_path, :method => :get %> 
+
