@@ -17,7 +17,10 @@
 
 <p>
 	<strong>Members: </strong>
-	TO DO
+		<%@team.members.each do |m|%>
+			<%=link_to m.name + ",", team_member_path(@team, m) %>
+		<%end%>
+	
 </p>
 <br>
 <br>

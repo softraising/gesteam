@@ -11,7 +11,7 @@ class AdminsController < ApplicationController
 	  else
 	    render "new"
 	  end
-	endz
+	end
 
   	private
 	def admin_params
