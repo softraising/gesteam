@@ -3,22 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .teams {
 	.app_header{
-	 	background-color: #787878;
+	 	background-color: #CEECF5;
 	 	width: 100%;
 	 	z-index: 1;
 	 	position: fixed;
 	 	margin-top: -8%;
  	}
-	.team_table{
-		background-color: black;
-		border-spacing: 1px;
-	}
-
-	.team_table tr th{
-		background-color: #5858FA;
-		padding: 5px;
-		margin: 1px;
-	}
 
 	.list_line_even {
 		 background: #A9D0F5;
@@ -49,23 +39,5 @@
 		word-wrap: break-word;
 		max-width: 600px;
 	}
-	/* .team_table tr {
-	  display: block;
-	  border: 1px solid #000;
-	}
-
-	.team_table td{
-		border-left: 1px solid #000;
-		border-right: 1px solid #000;		
-	}
-
-	.team_table th{
-		border-left: 1px solid #000;
-		border-right: 1px solid #000;		
-	} */
-	/*.team_table tr td{
-			background-color: yellow;
-			padding: 2px;
-		}*/
 
 }
