@@ -24,6 +24,6 @@
 </p>
 <br>
 <br>
-<%= link_to "Add New Member", new_team_member_path(:team_id => @team.id) %> <br>
-<%= link_to "Back To Teams", teams_path %> 
+<%= button_to "Add New Member", new_team_member_path(:team_id => @team.id), :method => :get %> <br>
+<%= button_to "Back To Teams", teams_path, :method => :get %> 
 
