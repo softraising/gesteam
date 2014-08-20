@@ -15,9 +15,11 @@
 		<tr class="<%= cycle("list_line_odd", "list_line_even") %>">
 			<td class="radius5"><%= team.name %></td>
 			<td class="limitLength2 radius5"><%= truncate(team.description, length: 280) %></td>
-			<td class="limitLength radius5">
-				<% team.members.each do |m|%>  
-					<%= link_to m.name + ",", team_member_path(team, m) %><%= " " %>
+			<td class="radius5">
+				<% if team.members.count == 0 %>
+					-----
+				<% else %>
+					<%= link_to "view #{team.members.count} members", team_members_path(:team_id => team.id) %>
 				<% end %>
 			</td>
 			<td class="radius5"><%= team.company %></td>
