@@ -6,6 +6,9 @@ gem 'rails', '4.0.3'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+#The administration framework for Ruby on Rails applications
+gem 'activeadmin', github: 'gregbell/active_admin'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -50,17 +53,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :development, :test do
-  gem 'rspec-rails', '~> 3.0.0.beta'
-  gem 'factory_girl_rails'
-end
 
-group :test do 
-	gem 'faker' 
-	gem 'capybara'
-	gem 'guard-rspec' 
-	gem 'launchy' 
-end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
