@@ -22,7 +22,7 @@
         </div>
         <div class = "hdr-right">
           <% if current_admin %>
-            <p class = "logIn-as">Logged in as</p> <%= link_to current_admin.email, teams_path %>
+            <p class = "logIn-as">You're Logged in as</p> <%= link_to current_admin.email, teams_path %>
             <p><%= link_to "Log out", log_out_path %></p>
           <% else %>
             <div class="button-bar">
